@@ -1,0 +1,301 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.site-header {
+  background-image: url(../img/prog5.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60rem;
+  margin: 0;
+}
+
+.site-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-header h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.site-header h1 span {
+  font-weight: 700;
+}
+
+.navegacion a {
+  text-align: center;
+  display: block;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.texto-header {
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.texto-header p {
+  font-size: 2.2rem;
+}
+
+.contenido-tareas {
+  background-image: url(../img/homework2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60;
+  padding: 15rem;
+}
+
+.contenido-tareas a {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.contenido-curriculum {
+  background-image: url(../img/cv.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60;
+  padding: 15rem;
+}
+
+.contenido-curriculum a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenido-contacto {
+  background-image: url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60;
+  padding: 15rem;
+}
+
+.contenido-contacto a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: black;
+}
+
+.site-footer p {
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+}
+
+.site-footer p span {
+  font-weight: 700;
+}
+
+
+.navegacion-principal {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navegacion-principal a {
+  color: black;
+  padding: 0rem 1rem;
+  text-decoration: none;
+}
+
+.navegacion-secundaria{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navegacion-secundaria a{
+  color: black;
+  text-decoration: none;
+}
+/*Botones*/
+
+.btn {
+  display: block;
+  /*Botones en celular tomen todo el tamaño disponible*/
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  color: white;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  flex: 0 0 100%; /*para que el boton crezca en pequeño*/
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+}
+
+.btn-primario {
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+    /*Ancho definido por medio de el padding*/
+  }
+}
+/*CONTACTO*/
+
+.formulario-contacto {
+  background-color: white;
+  padding: 5rem;
+}
+
+@media (min-width: 768px) {
+  .formulario-contacto {
+    margin-top: 1rem;
+  }
+}
+
+.formulario-contacto .campo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.formulario-contacto .campo label {
+  flex: 0 0 10rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+}
+
+.formulario-contacto textarea {
+  width: 110rem;
+  height: 10rem;
+}
+
+.formulario-contacto .enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*MENUUU*/
+div#menu {
+  margin: 2rem auto;
+  width: 65rem;
+  min-height: 5rem;
+  background-color: white;
+  border-radius: 5rem;
+}
+
+div.subapartado {
+
+  width: 65rem;
+  min-height: 5rem;
+  background-color: white;
+  border-radius: 4rem;
+}
+
+div.titulo {
+  text-align: center;
+  width: 65rem;
+  height: 5rem;
+  background-color: black;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+p.titulo{
+  color: white;
+  margin: 13px;
+  font-weight: 700;
+}
+
+div.info{
+  width: 65rem;
+  height: 0;
+  background-color: whitesmoke;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+p.info{
+  margin: 20px;
+  text-align: center;
+  color: black;
+}
+
+div.subapartado:hover div.info{
+  height: 20rem;
+
+}

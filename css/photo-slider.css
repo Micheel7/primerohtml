@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: black;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  
+  .contenedor {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "PT Sans", sans-serif;
+  }
+  
+  h1{
+    font-size: 10rem;
+    font-weight: 400;
+    color: white;
+  }
+
+  h1 span{
+      font-weight: 700;
+  }
+  
+  
+  /*img {
+    width: 100%;
+    height: auto;
+  }*/
+
+  .centrar-texto {
+    text-align: center;
+  }
+  
+  #slider {
+    overflow: hidden;
+  }
+
+  #slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0rem;
+    padding-top: 5rem;
+    left: 0;
+    animation: 15s slider infinite;
+  }
+
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+
+  @keyframes slider {
+    0%{
+      left: 0;
+    }
+    20%{
+      left: 0;
+    }
+    25%{
+      left: -100%;
+    }
+    45%{
+      left: -100%;
+    }
+    50%{
+      left: -200%;
+    }
+    70%{
+      left: -200%;
+    }
+    75%{
+      left: -300%;
+    }
+    95%{
+      left: -300%;
+    }
+    100%{
+      left: -400%;
+    }
+    
+  }
+
+  
